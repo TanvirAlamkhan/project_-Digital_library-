@@ -1,0 +1,137 @@
+@{
+    ViewData["Title"] = "My Borrowing";
+    // Mock data for demonstration
+    var currentBorrowings = new[] {
+        new { Title = "C# in Depth", Author = "Jon Skeet", BorrowDate = DateTime.Now.AddDays(-10), DueDate = DateTime.Now.AddDays(5), Status = "Due", Fine = 0 },
+        new { Title = "AI Basics", Author = "John Doe", BorrowDate = DateTime.Now.AddDays(-20), DueDate = DateTime.Now.AddDays(-2), Status = "Overdue", Fine = 40 },
+    };
+    var history = new[] {
+        new { Title = "Clean Code", Author = "Robert C. Martin", BorrowDate = DateTime.Now.AddMonths(-2), DueDate = DateTime.Now.AddMonths(-2).AddDays(10), ReturnDate = DateTime.Now.AddMonths(-2).AddDays(9), Status = "Returned", Fine = 0 },
+        new { Title = "Design Patterns", Author = "Erich Gamma", BorrowDate = DateTime.Now.AddMonths(-1), DueDate = DateTime.Now.AddMonths(-1).AddDays(10), ReturnDate = DateTime.Now.AddMonths(-1).AddDays(12), Status = "Returned", Fine = 20 },
+    };
+    int totalFine = currentBorrowings.Sum(b => b.Fine) + history.Sum(h => h.Fine);
+    bool hasCurrent = currentBorrowings.Length > 0;
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+<div class="container py-4">
+    <div class="mb-3">
+        <a href="/Member/Index" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+    </div>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold"><i class="fas fa-book-reader me-2"></i>My Borrowing</h2>
+        <div>
+            <a href="/Member/BookSearch" class="btn btn-primary"><i class="fas fa-plus"></i> Request New Book</a>
+            <button class="btn btn-outline-success ms-2"><i class="fas fa-file-excel"></i> Download Excel</button>
+            <button class="btn btn-outline-danger ms-2"><i class="fas fa-file-pdf"></i> Download PDF</button>
+        </div>
+    </div>
+    <div class="mb-3">
+        <span class="fs-5 fw-semibold">Total Fines Due: </span>
+        <span class="badge bg-danger fs-5">@totalFine BDT</span>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header bg-light d-flex justify-content-between align-items-center">
+            <span class="fw-bold"><i class="fas fa-book"></i> Currently Borrowed Books</span>
+            <div>
+                <input type="text" class="form-control d-inline-block w-auto me-2" placeholder="Filter by title..." style="width:180px;" />
+                <select class="form-select d-inline-block w-auto me-2" style="width:140px;">
+                    <option>Status</option>
+                    <option>Due</option>
+                    <option>Overdue</option>
+                    <option>Returned</option>
+                </select>
+                <input type="date" class="form-control d-inline-block w-auto" style="width:160px;" />
+            </div>
+        </div>
+        <div class="card-body p-0">
+            @if (hasCurrent)
+            {
+                <table class="table table-hover mb-0 align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Author</th>
+                            <th>Borrow Date</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                            <th>Fine</th>
+                            <th>Due In</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var b in currentBorrowings)
+                        {
+                            var overdue = b.Status == "Overdue";
+                            var dueIn = (b.DueDate - DateTime.Now).Days;
+                            <tr class="@(overdue ? "table-danger" : "")">
+                                <td>@b.Title</td>
+                                <td>@b.Author</td>
+                                <td>@b.BorrowDate.ToString("yyyy-MM-dd")</td>
+                                <td>@b.DueDate.ToString("yyyy-MM-dd")</td>
+                                <td><span class="badge @(overdue ? "bg-danger" : "bg-success")">@b.Status</span></td>
+                                <td>@(b.Fine > 0 ? $"{b.Fine} BDT" : "-")</td>
+                                <td>
+                                    @if (overdue)
+                                    {
+                                        <span class="text-danger fw-bold">Overdue by @Math.Abs(dueIn) days</span>
+                                    }
+                                    else
+                                    {
+                                        <div class="progress" style="height: 18px;">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: @(100 - (dueIn * 10))%">@dueIn days left</div>
+                                        </div>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="p-4 text-center text-muted">You have no active borrowings.</div>
+            }
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header bg-light fw-bold"><i class="fas fa-history"></i> Borrowing History</div>
+        <div class="card-body p-0">
+            <table class="table table-striped mb-0 align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Book Title</th>
+                        <th>Author</th>
+                        <th>Borrow Date</th>
+                        <th>Due Date</th>
+                        <th>Return Date</th>
+                        <th>Status</th>
+                        <th>Fine</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var h in history)
+                    {
+                        <tr>
+                            <td>@h.Title</td>
+                            <td>@h.Author</td>
+                            <td>@h.BorrowDate.ToString("yyyy-MM-dd")</td>
+                            <td>@h.DueDate.ToString("yyyy-MM-dd")</td>
+                            <td>@h.ReturnDate.ToString("yyyy-MM-dd")</td>
+                            <td><span class="badge bg-secondary">@h.Status</span></td>
+                            <td>@(h.Fine > 0 ? $"{h.Fine} BDT" : "-")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header bg-light fw-bold"><i class="fas fa-calendar-alt"></i> Borrow/Return Calendar (Demo)</div>
+        <div class="card-body">
+            <div class="alert alert-info mb-0">Calendar view coming soon!</div>
+        </div>
+    </div>
+</div> 

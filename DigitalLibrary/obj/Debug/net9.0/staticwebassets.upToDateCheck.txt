@@ -1,0 +1,232 @@
+wwwroot\css\animate.min.css
+wwwroot\css\bootstrap-grid.css
+wwwroot\css\bootstrap-grid.css.map
+wwwroot\css\bootstrap-grid.min.css
+wwwroot\css\bootstrap-grid.min.css.map
+wwwroot\css\bootstrap-reboot.css
+wwwroot\css\bootstrap-reboot.css.map
+wwwroot\css\bootstrap-reboot.min.css
+wwwroot\css\bootstrap-reboot.min.css.map
+wwwroot\css\bootstrap.css
+wwwroot\css\bootstrap.css.map
+wwwroot\css\bootstrap.min.css
+wwwroot\css\bootstrap.min.css.map
+wwwroot\css\default-skin.css
+wwwroot\css\font-awesome.min.css
+wwwroot\css\icomoon.css
+wwwroot\css\identity-pages.css
+wwwroot\css\jquery-ui.css
+wwwroot\css\jquery.fancybox.min.css
+wwwroot\css\jquery.mCustomScrollbar.min.css
+wwwroot\css\librarian-dashboard.css
+wwwroot\css\meanmenu.css
+wwwroot\css\nice-select.css
+wwwroot\css\normalize.css
+wwwroot\css\owl.carousel.min.css
+wwwroot\css\responsive.css
+wwwroot\css\site.css
+wwwroot\css\slick.css
+wwwroot\css\style.css
+wwwroot\favicon.ico
+wwwroot\images\banner-bg.png
+wwwroot\images\banner-img.png
+wwwroot\images\client-img.png
+wwwroot\images\hosting-bg.png
+wwwroot\images\hosting-img.png
+wwwroot\images\icon-1.png
+wwwroot\images\icon-2.png
+wwwroot\images\icon-3.png
+wwwroot\images\icon-4.png
+wwwroot\images\icon-5.png
+wwwroot\images\icon-6.png
+wwwroot\images\icon-7.png
+wwwroot\images\icon-9.png
+wwwroot\images\logo.png
+wwwroot\images\quick-icon.png
+wwwroot\js\bootstrap.bundle.js
+wwwroot\js\bootstrap.bundle.js.map
+wwwroot\js\bootstrap.bundle.min.js
+wwwroot\js\bootstrap.bundle.min.js.map
+wwwroot\js\bootstrap.js
+wwwroot\js\bootstrap.js.map
+wwwroot\js\bootstrap.min.js
+wwwroot\js\bootstrap.min.js.map
+wwwroot\js\custom.js
+wwwroot\js\jquery-3.0.0.min.js
+wwwroot\js\jquery.mCustomScrollbar.concat.min.js
+wwwroot\js\jquery.min.js
+wwwroot\js\jquery.validate.js
+wwwroot\js\librarian-dashboard.js
+wwwroot\js\modernizer.js
+wwwroot\js\plugin.js
+wwwroot\js\popper.min.js
+wwwroot\js\site.js
+wwwroot\js\slider-setting.js
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\dist\jquery.slim.js
+wwwroot\lib\jquery\dist\jquery.slim.min.js
+wwwroot\lib\jquery\dist\jquery.slim.min.map
+wwwroot\lib\jquery\LICENSE.txt
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery\LICENSE.txt
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery\dist\jquery.slim.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery\dist\jquery.slim.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery\dist\jquery.min.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery\dist\jquery.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery\dist\jquery.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery-validation\LICENSE.md
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\slider-setting.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\site.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\popper.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\plugin.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\modernizer.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\librarian-dashboard.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\jquery.validate.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\jquery.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\jquery.mCustomScrollbar.concat.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\jquery-3.0.0.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\custom.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\bootstrap.min.js.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\bootstrap.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\bootstrap.js.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\bootstrap.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\bootstrap.bundle.min.js.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\bootstrap.bundle.min.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\bootstrap.bundle.js.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\js\bootstrap.bundle.js
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\favicon.ico
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\style.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\slick.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\site.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\responsive.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\owl.carousel.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\normalize.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\nice-select.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\meanmenu.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\librarian-dashboard.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\jquery.mCustomScrollbar.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\jquery.fancybox.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\jquery-ui.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\identity-pages.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\icomoon.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\font-awesome.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\default-skin.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap-reboot.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap-reboot.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap-reboot.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap-reboot.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap-grid.min.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap-grid.min.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap-grid.css.map
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\bootstrap-grid.css
+D:\Work Firotech\new project\Digital Library\DigitalLibrary\DigitalLibrary\wwwroot\css\animate.min.css

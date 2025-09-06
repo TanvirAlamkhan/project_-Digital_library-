@@ -1,0 +1,102 @@
+@model DigitalLibrary.Models.Book
+@{
+    ViewData["Title"] = "Add Book";
+    var success = ViewBag.Success as bool?;
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-7">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white d-flex align-items-center">
+                    <i class="fas fa-plus fa-lg me-2"></i>
+                    <h4 class="mb-0">Add New Book</h4>
+                </div>
+                <div class="card-body">
+                    @if (success == true)
+                    {
+                        <div class="alert alert-success">Book added successfully!</div>
+                    }
+                    <form asp-action="AddBook" method="post" enctype="multipart/form-data" novalidate>
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        <div class="mb-3">
+                            <label asp-for="Title" class="form-label">Title</label>
+                            <input asp-for="Title" class="form-control" required maxlength="200" />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Author" class="form-label">Author</label>
+                            <input asp-for="Author" class="form-control" required maxlength="150" />
+                            <span asp-validation-for="Author" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="ISBN" class="form-label">ISBN</label>
+                            <input asp-for="ISBN" class="form-control" required maxlength="20" />
+                            <span asp-validation-for="ISBN" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Publisher" class="form-label">Publisher</label>
+                            <input asp-for="Publisher" class="form-control" maxlength="100" />
+                            <span asp-validation-for="Publisher" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="PublishedDate" class="form-label">Published Date</label>
+                            <input asp-for="PublishedDate" class="form-control" type="date" />
+                            <span asp-validation-for="PublishedDate" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Category</label>
+                            <input type="text" name="Category" class="form-control" maxlength="100" required placeholder="Enter category name" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Cover Image (JPG/PNG, max 2MB)</label>
+                            <input type="file" name="CoverImageFile" class="form-control" accept="image/png, image/jpeg" onchange="previewImage(event)" />
+                            @if (ViewData.ModelState["CoverImageFile"] != null && ViewData.ModelState["CoverImageFile"].Errors.Count > 0)
+                            {
+                                <span class="text-danger">@ViewData.ModelState["CoverImageFile"].Errors[0].ErrorMessage</span>
+                            }
+                            <div class="mt-2">
+                                <img id="coverPreview" src="#" alt="Preview" style="display:none;max-width:120px;max-height:120px;border-radius:8px;" />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="TotalCopies" class="form-label">Total Copies</label>
+                            <input asp-for="TotalCopies" class="form-control" type="number" min="0" required />
+                            <span asp-validation-for="TotalCopies" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="AvailableCopies" class="form-label">Available Copies</label>
+                            <input asp-for="AvailableCopies" class="form-control" type="number" min="0" required />
+                            <span asp-validation-for="AvailableCopies" class="text-danger"></span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Submit</button>
+                            <button type="reset" class="btn btn-outline-secondary"><i class="fas fa-undo"></i> Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function previewImage(event) {
+            var input = event.target;
+            var preview = document.getElementById('coverPreview');
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                preview.src = '#';
+                preview.style.display = 'none';
+            }
+        }
+    </script>
+} 

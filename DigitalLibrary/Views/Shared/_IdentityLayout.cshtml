@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Digital Library</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/identity-pages.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body class="identity-body">
+    <div class="identity-wrapper">
+        <header class="identity-header">
+            <div class="container">
+                <div class="identity-nav">
+                    <a href="/" class="identity-brand">
+                        <i class="fas fa-book-open"></i>
+                        <span>Digital Library</span>
+                    </a>
+                    <nav class="identity-nav-links">
+                        <a href="/" class="nav-link">Home</a>
+                        <a href="/Identity/Account/Register" class="nav-link">Register</a>
+                        <a href="/Identity/Account/Login" class="nav-link">Login</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main role="main" class="identity-main">
+            @RenderBody()
+        </main>
+
+        <footer class="identity-footer">
+            <div class="container">
+                <div class="identity-footer-content">
+                    <p>&copy; @DateTime.Now.Year - Digital Library. All rights reserved.</p>
+                    <div class="identity-footer-links">
+                        <a href="/">Home</a>
+                        <a href="/Identity/Account/Register">Register</a>
+                        <a href="/Identity/Account/Login">Login</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> 

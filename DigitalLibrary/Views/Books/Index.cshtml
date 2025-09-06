@@ -1,0 +1,93 @@
+@model IEnumerable<DigitalLibrary.Models.Book>
+
+@{
+    ViewData["Title"] = "Books Management";
+    Layout = "~/Views/Shared/_LibrarianLayout.cshtml";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2><i class="fas fa-books"></i> Books Management</h2>
+                <div>
+                    <a asp-action="Create" class="btn btn-primary me-2">
+                        <i class="fas fa-plus"></i> Add New Book
+                    </a>
+                    <a href="/Librarian/LibrarianDashboard" class="btn btn-outline-secondary">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th><i class="fas fa-book"></i> Title</th>
+                                    <th><i class="fas fa-user"></i> Author</th>
+                                    <th><i class="fas fa-barcode"></i> ISBN</th>
+                                    <th><i class="fas fa-building"></i> Publisher</th>
+                                    <th><i class="fas fa-calendar"></i> Published Date</th>
+                                    <th><i class="fas fa-layer-group"></i> Total Copies</th>
+                                    <th><i class="fas fa-check-circle"></i> Available</th>
+                                    <th><i class="fas fa-cogs"></i> Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            <strong>@Html.DisplayFor(modelItem => item.Title)</strong>
+                                        </td>
+                                        <td>@Html.DisplayFor(modelItem => item.Author)</td>
+                                        <td><code>@Html.DisplayFor(modelItem => item.ISBN)</code></td>
+                                        <td>@Html.DisplayFor(modelItem => item.Publisher)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.PublishedDate)</td>
+                                        <td>
+                                            <span class="badge bg-info">@Html.DisplayFor(modelItem => item.TotalCopies)</span>
+                                        </td>
+                                        <td>
+                                            @if (item.AvailableCopies > 0)
+                                            {
+                                                <span class="badge bg-success">@Html.DisplayFor(modelItem => item.AvailableCopies)</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-danger">Out of Stock</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            <div class="btn-group" role="group">
+                                                <a asp-action="Edit" asp-route-id="@item.BookID" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Edit Book">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                                <a asp-action="Details" asp-route-id="@item.BookID" class="btn btn-sm btn-outline-info" data-bs-toggle="tooltip" title="View Details">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a asp-action="Delete" asp-route-id="@item.BookID" class="btn btn-sm btn-outline-danger" data-bs-toggle="tooltip" title="Delete Book">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+</script>

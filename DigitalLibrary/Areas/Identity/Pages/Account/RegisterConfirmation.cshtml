@@ -1,0 +1,47 @@
+@page
+@model DigitalLibrary.Areas.Identity.Pages.Account.RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+
+<div class="identity-page">
+    <div class="identity-container">
+        <div class="identity-header">
+            <div class="identity-logo">
+                <i class="fas fa-book-open"></i>
+                <span class="identity-title">Digital Library</span>
+            </div>
+            <h1 class="identity-title">Welcome!</h1>
+            <p class="identity-subtitle">Your account has been created successfully</p>
+        </div>
+
+        <div class="identity-form">
+            <div class="text-center">
+                <i class="fas fa-check-circle" style="font-size: 3rem; color: #059669; margin-bottom: 1rem;"></i>
+                <p class="identity-subtitle">
+                    Thank you for registering with Digital Library!
+                </p>
+                @if (@Model.DisplayConfirmAccountLink)
+                {
+                    <p class="identity-subtitle">
+                        This app does not currently have a real email sender registered, see 
+                        <a href="https://aka.ms/aspaccountconf">these docs</a> for how to configure a real email sender.
+                        Normally this would be emailed: <a id="confirm-link" href="@Model.EmailConfirmationUrl">Click here to confirm your account</a>
+                    </p>
+                }
+                else
+                {
+                    <p class="identity-subtitle">
+                        Please check your email to confirm your account.
+                    </p>
+                }
+            </div>
+            
+            <div class="identity-links">
+                <p>
+                    <a asp-page="./Login">Sign in to your account</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div> 

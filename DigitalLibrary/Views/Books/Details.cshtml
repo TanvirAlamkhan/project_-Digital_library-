@@ -1,0 +1,61 @@
+@model DigitalLibrary.Models.Book
+
+@{
+    ViewData["Title"] = "Book Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Book Details</h2>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">Title</dt>
+                        <dd class="col-sm-9">@Model.Title</dd>
+
+                        <dt class="col-sm-3">Author</dt>
+                        <dd class="col-sm-9">@Model.Author</dd>
+
+                        <dt class="col-sm-3">ISBN</dt>
+                        <dd class="col-sm-9">@Model.ISBN</dd>
+
+                        <dt class="col-sm-3">Publisher</dt>
+                        <dd class="col-sm-9">@(Model.Publisher ?? "Not specified")</dd>
+
+                        <dt class="col-sm-3">Published Date</dt>
+                        <dd class="col-sm-9">@(Model.PublishedDate?.ToString("MMMM dd, yyyy") ?? "Not specified")</dd>
+
+                        <dt class="col-sm-3">Category</dt>
+                        <dd class="col-sm-9">@(Model.Category?.Name ?? "Not specified")</dd>
+
+                        <dt class="col-sm-3">Cover Image</dt>
+                        <dd class="col-sm-9">
+                            @if (!string.IsNullOrEmpty(Model.CoverImage))
+                            {
+                                <img src="@Model.CoverImage" alt="Book Cover" class="img-fluid" style="max-width: 200px;" />
+                            }
+                            else
+                            {
+                                <span>No cover image available</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-3">Total Copies</dt>
+                        <dd class="col-sm-9">@Model.TotalCopies</dd>
+
+                        <dt class="col-sm-3">Available Copies</dt>
+                        <dd class="col-sm-9">@Model.AvailableCopies</dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <a asp-action="Edit" asp-route-id="@Model.BookID" class="btn btn-primary">Edit</a>
+                    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
